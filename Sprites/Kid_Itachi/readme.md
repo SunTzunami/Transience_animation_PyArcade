@@ -1,1 +1,1 @@
-Store kid Itachi sprites.
+Stores kid Itachi sprites.

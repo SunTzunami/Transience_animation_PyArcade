@@ -1,1 +1,1 @@
-Teen Itachi sprites
+Stores teen Itachi sprites

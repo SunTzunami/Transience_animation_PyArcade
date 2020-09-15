@@ -1,0 +1,1 @@
+Store kid Itachi sprites.

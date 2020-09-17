@@ -1,2 +1,2 @@
-# Arcade_side_scroller
-A sidescroller using Python Arcade
+# Arcade animation
+animated Itachi using Python Arcade.

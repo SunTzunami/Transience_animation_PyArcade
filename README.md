@@ -1,5 +1,6 @@
 # Transience Animation
 ![Preview](Demo/preview.gif)
+
 An attempt at making an animation with the arcade game framework to illustrate transient nature of life. Used a track called Whispers Way (Buckethead Pikes #251). 
 This repo stores all the necessary files and a rar file that can be downloaded and unzipped to watch the animation.
 # To view the animation-

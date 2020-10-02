@@ -1,13 +1,13 @@
 import arcade
-import time
 import random
-import sys
-import keyboard
-s_width=800
-s_height=600
+import sys           # not required as of now
+import time          # not required as of now
+import keyboard      # not required as of now
+s_width=800             #width of the screen (in pixels)
+s_height=600            #height of the screen (in pixels)
 k=173
-l=[i for i in range(5)]
-def draw_bg(u):
+l=[i for i in range(5)] #list to store the indexes of the background objects (trees, shrines, statues etc.)
+def draw_bg(u):         #function to render the background                                                          
         draw_bg.t+=5
         if(draw_bg.t<0 and draw_bg.end==0):
                 draw_bg.t-=5
@@ -95,7 +95,7 @@ def draw_bg(u):
                 lh.center_y=330
                 lh.draw()
                 anime()
-        elif(draw_bg.end>0):
+        elif(draw_bg.end>0):                    #to render the outro
                 draw_bg.end+=1
                 if(draw_bg.end<21):
                         bg=arcade.load_texture("end/{}.png".format(draw_bg.end-2))
@@ -114,8 +114,10 @@ draw_bg.t=-250
 draw_bg.counter=0
 draw_bg.text=160
 draw_bg.end=0
+
+
 def anime():
-        """
+        """                     #clouds (optional)
         for i in range(4):
                 x=random.randint(0, 800)
                 y=random.uniform(450, 455)
@@ -182,7 +184,9 @@ draw_bg.counter+=1
 anime.tt=x
 anime.ini_y=83
 anime.c=1
-def main():
+
+
+def main():                          #main function
         s_title="Peace"
         arcade.Window.music = arcade.Sound("buck251.mp3", streaming=True)
         arcade.open_window(s_width, s_height, s_title)
@@ -191,5 +195,3 @@ def main():
         arcade.run()
 main()
 #print(draw_bg.t)
-
-

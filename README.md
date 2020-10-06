@@ -6,5 +6,5 @@ This repo stores all the necessary files and a rar file that can be downloaded a
 # To view the animation-
 Extract the rar file and run Main.py. It'll run flawlessly provided you have Arcade module installed (No other modules are necessary).
 # Acknowledgements
-  1. Masashi Kishimoto (Itachi is his creation).
-  2. Buckethead (Whispers Way- background music is his creation). 
+  1. Masashi Kishimoto (Itachi).
+  2. Buckethead (Whispers Way- background music). 

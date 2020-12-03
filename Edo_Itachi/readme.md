@@ -1,0 +1,1 @@
+Edo Tensei Itachi sprites

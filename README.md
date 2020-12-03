@@ -2,7 +2,7 @@
 ![Preview](Demo/preview.gif)
 
 An attempt at making an animation of one of my favourite anime characters- Itachi.
-Made via the arcade framework.
+I made this by using the Python Arcade framework.
 Used a track called Feather by Nujabes as background music.
 This repo stores all the necessary files required to view the animation
 # To view the animation-

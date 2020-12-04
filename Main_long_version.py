@@ -193,7 +193,7 @@ def main():
         s_title="Peace"
         arcade.Window.music = arcade.Sound("feather.mp3", streaming=True)
         arcade.open_window(s_width, s_height, s_title)
-        fp=22                                                    # can change fps by manipulating the value of the variable fps
+        fps=22                                                    # can change fps by manipulating the value of the variable fps
         arcade.schedule(draw_bg, 1/fps)                          
         #arcade.Window.music.play(0.3)                            
         arcade.run()

@@ -2,11 +2,14 @@ import arcade
 import time
 import random
 import sys
-s_width=800
+
+s_width=800                     # screen resolution: 800×600 
 s_height=600
 k=173
-l=[i for i in range(5)]
-def draw_bg(u):
+l=[i for i in range(5)]           
+
+
+def draw_bg(u):                 # renders the background       
         draw_bg.t+=5
         if(draw_bg.t<0 and draw_bg.end==0):
                 draw_bg.t-=5
@@ -114,7 +117,9 @@ draw_bg.t=-200
 draw_bg.counter=0
 draw_bg.text=160
 draw_bg.end=0
-def anime():
+
+
+def anime():                    # Itachi and the props like trees and shrines are animated via this function
         """
         for i in range(4):
                 x=random.randint(0, 800)
@@ -171,25 +176,26 @@ def anime():
                 anime.tree_size=random.uniform(1.8, 2.1)
                 anime.c+=1
         atg.draw()
-anime.age=0
+        
+anime.age=0                                     #keeps track of Itachi's age and changes the sprite textures accordingly
 anime.ini_x=350
 anime.ini_t=825
 anime.ini_c=1
-anime.tree_size=random.uniform(1.8, 2.1)
+anime.tree_size=random.uniform(1.8, 2.1)              
 anime.tc=random.randint(168, 175)
 x=l[draw_bg.counter]
 draw_bg.counter+=1
 anime.tt=x
 anime.ini_y=83
 anime.c=1
+
 def main():
         s_title="Peace"
         arcade.Window.music = arcade.Sound("feather.mp3", streaming=True)
         arcade.open_window(s_width, s_height, s_title)
-        arcade.schedule(draw_bg, 1/22)
-        #arcade.Window.music.play(0.3)
+        fp=22                                                    # can change fps by manipulating the value of the variable fps
+        arcade.schedule(draw_bg, 1/fps)                          
+        #arcade.Window.music.play(0.3)                            
         arcade.run()
 main()
 #print(draw_bg.t)
-
-
